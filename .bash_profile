@@ -6,6 +6,12 @@ export "GREP_OPTIONS=--color=auto"
 alias "ls=ls -G"
 source ~/.git-completion.bash
 
+parse_git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+
+export PS1="[\w]\$(parse_git_branch) \[$cyan\]Π\[$reset\] "
+
 # SteelSeries Dev
 export "PATH=/Users/chrisdargis/.rvm/gems/ruby-1.9.3-p429/bin:/Users/chrisdargis/.rvm/gems/ruby-1.9.3-p429@global/bin:/Users/chrisdargis/.rvm/rubies/ruby-1.9.3-p429/bin:/Users/chrisdargis/.rvm/bin:/usr/local/share/npm/bin:/Users/chrisdargis/bin:/Users/chrisdargis/code/scripts:/usr/bin:/bin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin:/usr/local/go/bin:/usr/local/MacGPG2/bin:$PATH"
 export "PATH=$DEV/core/bin:$PATH"
