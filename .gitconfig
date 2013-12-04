@@ -4,6 +4,7 @@
         co = checkout
         ci = commit
         pr = pull --rebase
+        mg = merge --no-ff
 [user]
         name = Chris Dargis
         email = chris.dargis@steelseries.com
