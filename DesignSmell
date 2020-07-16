@@ -1,0 +1,9 @@
+Rigidity (The design is difficult to change)
+Fragility (The design is easy to break)
+Immobility (The design is difficult to reuse)
+Viscosity (It is difficult to do the right thing, easy to do the wrong thing),
+Needless complexity (Overdesign)
+Needless repetition (Mouse abuse, copy and paste)
+Opacity (Disorganized expression, unreadable code)
+
+often paired with a fibonacci number representing the scale of the problem.
